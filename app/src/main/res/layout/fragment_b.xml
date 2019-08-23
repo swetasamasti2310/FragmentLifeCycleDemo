@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a0dddd"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragment B"
+                android:textSize="40dp"/>
+
+        <Button
+                android:id="@+id/buttonAddFragmentC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to fragment C Using Add"/>
+
+        <Button
+                android:id="@+id/buttonReplaceFragmentC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to fragment C Using Replace"/>
+
+        <Button
+                android:id="@+id/buttonPop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pop"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
