@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.i(LOG_TAG, "on create")
         setContentView(R.layout.activity_main)
 
         addFragmentA.setOnClickListener {
@@ -28,6 +29,36 @@ class MainActivity : AppCompatActivity() {
         buttonPop.setOnClickListener {
             pop()
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i(LOG_TAG, "on start")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.i(LOG_TAG, "on Restart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i(LOG_TAG, "on Resume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i(LOG_TAG, "on Pause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i(LOG_TAG, "on Stop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(LOG_TAG, "on Destroy")
     }
 
     fun goToFragmentUsingAdd(fragment : Fragment) {
